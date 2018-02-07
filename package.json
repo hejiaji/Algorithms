@@ -1,10 +1,20 @@
 {
   "name": "Algorithms",
   "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "test": "babel-node spec/run.js"
+  },
   "devDependencies": {
     "babel-eslint": "8.1.2",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-es2015": "6.24.1",
     "eslint": "4.14.0",
     "eslint-config-airbnb": "16.1.0",
-    "eslint-plugin-import": "2.8.0"
+    "eslint-plugin-import": "2.8.0",
+    "jasmine": "3.0.0"
+  },
+  "dependencies": {
+    "babel-cli": "6.26.0"
   }
 }
