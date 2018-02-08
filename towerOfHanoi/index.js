@@ -21,5 +21,4 @@ function run(number) {
   return count;
 }
 
-run(2);
-// export { run };
+export { run };
