@@ -5,11 +5,11 @@ function bubbleSort(arr, isAsc) {
   let intermediate;
 
   for (let i = 0; i < clonedArray.length - 1; i++) {
-    for (let j = i + 1; j < clonedArray.length; j++) {
-      if (shouldSwap(clonedArray[i], clonedArray[j], isAsc)) {
-        intermediate = clonedArray[i];
-        clonedArray[i] = clonedArray[j];
-        clonedArray[j] = intermediate;
+    for (let j = 0; j < clonedArray.length - i - 1; j++) {
+      if (shouldSwap(clonedArray[j], clonedArray[j + 1], isAsc)) {
+        intermediate = clonedArray[j];
+        clonedArray[j] = clonedArray[j + 1];
+        clonedArray[j + 1] = intermediate;
       }
     }
   }

@@ -1,4 +1,5 @@
 import { simpleSort } from './simpleSort';
 import { bubbleSort } from './bubbleSort';
+import { quickSort } from './quickSort';
 
-export { simpleSort, bubbleSort };
+export { simpleSort, bubbleSort, quickSort };
