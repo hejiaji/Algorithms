@@ -1,7 +1,8 @@
 import { shouldSwap } from '../utility/index';
-function simpleSort(arr, isAsc) {
+
+function bubbleSort(arr, isAsc) {
+  const clonedArray = arr.slice(0);
   let intermediate;
-  let clonedArray = arr.slice(0);
 
   for (let i = 0; i < clonedArray.length - 1; i++) {
     for (let j = i + 1; j < clonedArray.length; j++) {
@@ -12,7 +13,8 @@ function simpleSort(arr, isAsc) {
       }
     }
   }
+
   return clonedArray;
 }
 
-export { simpleSort };
+export { bubbleSort };
