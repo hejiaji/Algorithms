@@ -1,4 +1,4 @@
-function unique(arr, keyProps) {
+function uniqBy(arr, keyProps) {
 	const kvArray = arr.map((entry) => {
 		const key = keyProps.map(k => entry[k]).join('|');
 		return [key, entry];
@@ -7,5 +7,5 @@ function unique(arr, keyProps) {
 	return Array.from(map.values());
 }
 
-export { unique };
+export { uniqBy };
 
