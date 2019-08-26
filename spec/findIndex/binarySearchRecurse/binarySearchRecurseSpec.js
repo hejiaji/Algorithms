@@ -1,4 +1,4 @@
-import { findIndex } from '../../findIndex/bruteForce/index';
+import { findIndex } from '../../../findIndex/binarySearchRecurse';
 
 const array = [1, 3, 5, 6, 7, 11, 100];
 
