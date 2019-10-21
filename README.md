@@ -9,3 +9,4 @@ A collection of common Algorithm questions and examples.
 -	[Tower of Hanio](https://github.com/hejiaji/Algorithms/tree/master/towerOfHanoi)
 -	[Separate the numbers](https://github.com/hejiaji/Algorithms/tree/master/separateTheNumbers)
 -   [Sorts](https://github.com/hejiaji/Algorithms/tree/master/sorts)
+-   [FindIndex](https://github.com/hejiaji/Algorithms/tree/master/findIndex)
