@@ -1,17 +1,13 @@
 export function runInBatch(operation, ids, threshold = 3) {
-	let ops;
+	let ops = Promise.resolve([]);
 	const result = [];
-	let leftOver = ids.slice(0);
+	let leftOver = ids ? ids.slice(0) : [];
 	while (leftOver.length > 0) {
 		const currentBatch = leftOver.slice(0, threshold).map(operation);
-		if (!ops) {
-			ops = Promise.all(currentBatch);
-		} else {
-			ops = ops.then((x) => {
-				result.push(...x);
-				return Promise.all(currentBatch);
-			});
-		}
+		ops = ops.then((x) => {
+			result.push(...x);
+			return Promise.all(currentBatch);
+		});
 
 		leftOver = leftOver.slice(threshold);
 	}
